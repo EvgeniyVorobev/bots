@@ -31,11 +31,6 @@ bot.on('message', msg => ) {
 
 
 
-app.get('/provedenie_bot', function(request, response) {
-  
-
-
-});
 
 
 
