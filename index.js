@@ -5,9 +5,9 @@ const TelegramBot = require('node-telegram-bot-api');
 const TOKEN = '504046177:AAE1RcGBnSqhaODmg9Pj5aQlzeW6s3gDXf4';
 
 const bot = new TelegramBot(TOKEN, {polling: true});
-bot.on('message', msg => ) {
-	bot.sendMessage(msg.chat.id,`Привет, тебя звать-то ${msg.from.first_name} ?:)`);
-}
+bot.on('message', msg => {
+		bot.sendMessage(msg.chat.id,`Привет, тебя звать-то ${msg.from.first_name} ?:)`);
+})
 
 // app.set('port', (process.env.PORT || 5000));
 
