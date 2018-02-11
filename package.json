@@ -29,9 +29,6 @@
     "heroku",
     "express"
   ],
-  "scripts": {
-  "start": "node index.js"
-  },
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/heroku/node-js-getting-started/issues"
