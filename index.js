@@ -10,7 +10,16 @@ console.log("Listening on Port 5000");
 });
 bot.on('message', msg => {
 	console.log(msg);
-		bot.sendMessage(msg.chat.id,`Привет, тебя звать-то ${msg.from.first_name} ?:)`);
+	if (msg.text == 'Привет') {
+		bot.sendMessage(msg.chat.id,`Привет Плюшка :)`);
+	}
+	if (msg.text == 'Как дела?') {
+		bot.sendMessage(msg.chat.id,`Просто прекрастно, Одесса цветёт и пахнет :)`);
+	}
+	if (msg.text == 'Любишь Cеверного?') {
+		bot.sendMessage(msg.chat.id,`Конеччноо, послушай замечательную песню Северного: https://www.youtube.com/watch?v=ceyIGvd-GR0`);
+	}
+		// bot.sendMessage(msg.chat.id,`Привет, тебя звать-то ${msg.from.first_name} ?:)`);
 })
 
 
