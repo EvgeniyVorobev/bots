@@ -9,9 +9,9 @@ app.listen(port, "0.0.0.0", function() {
 console.log("Listening on Port 5000");
 });
 bot.on('message', msg => {
+	console.log(msg);
 		bot.sendMessage(msg.chat.id,`Привет, тебя звать-то ${msg.from.first_name} ?:)`);
 })
-
 
 
 // app.use(express.static(__dirname + '/public'));
